@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
+
 import sys
 import numpy as np
 from matplotlib import pyplot as plt
@@ -9,7 +11,7 @@ f=open(sys.argv[1])
 for l in f:
     data.append([int(c) for c in l.strip(" \n\r")])
 
-print len(data), 'x', len(data[0])
+print(len(data), 'x', len(data[0]))
 
 plt.imshow(data, interpolation='nearest')
 
