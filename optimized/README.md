@@ -314,6 +314,8 @@ Initial magnetization:  0.000010, up_s:  17179689306, dw_s:  17180049062
         magnetization:  0.000941, up_s:  17163708078, dw_s:  17196030290 (iter:      112)
         magnetization:  0.001023, up_s:  17162287230, dw_s:  17197451138 (iter:      128)
 Final   magnetization:  0.001023, up_s:  17162287230, dw_s:  17197451138 (iter:      128)
+
+Kernel execution time for 128 update steps: 1.063368E+03 ms, 4135.96 flips/ns (BW: 6205.20 GB/s)
 </PRE>
 
 To run 128 update steps on a 131072x65536 lattice using 2 and 8 H100 GPUs
@@ -366,6 +368,8 @@ Initial magnetization:  0.000005, up_s:   4294989182, dw_s:   4294945410
         magnetization:  0.001245, up_s:   4289621029, dw_s:   4300313563 (iter:      112)
         magnetization:  0.001418, up_s:   4288877118, dw_s:   4301057474 (iter:      128)
 Final   magnetization:  0.001418, up_s:   4288877118, dw_s:   4301057474 (iter:      128)
+
+Kernel execution time for 128 update steps: 6.105666E+02 ms, 1800.81 flips/ns (BW: 2703.41 GB/s)
 
 # 8xH100
 $ ./cuIsing -y $((32*2048)) -x $((32*2048)) -n 128 -p 16 -d 8 -t 1.5
