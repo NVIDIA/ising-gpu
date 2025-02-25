@@ -462,3 +462,4 @@ will generate an image file named `lattice_8192x8192_T_1.500000_IT_00001024_0.tx
 ## Contacts
 
 For comments, questions or anything related, write to Mauro Bisson at maurob@nvidia.com.
+
